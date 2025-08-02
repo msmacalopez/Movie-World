@@ -4,9 +4,6 @@ import Card from "./Card";
 const Hero = () => {
   return (
     <div className="photoSection">
-      <div className="titleNavBar">
-        <h1>Movie World</h1>
-      </div>
       <form className="topForm" action="">
         <input
           className="inputSearch"
