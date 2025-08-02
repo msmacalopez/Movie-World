@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  width: 100%;
+  background: rgb(57, 56, 56);
+}
+
+/* Hero Section */
+.photoSection {
+  background: linear-gradient(rgba(78, 75, 75, 0.368), rgba(78, 75, 75, 0.368)),
+    url("./assets/movie.jpg") no-repeat center center / cover;
+  min-height: 70vh;
+  margin-bottom: 20px;
+}
+
+.titleNavBar {
+  min-height: 9vh;
+  background: rgba(0, 0, 0, 0.553);
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  width: 100%;
+  margin: auto;
+}
+.titleNavBar > h1 {
+  color: orangered;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+.topForm {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* gap: 30px; */
+}
+.card {
+  width: 300px;
+  height: 220px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 5px;
+
+  gap: 5px;
+  padding: 20px;
+  border: solid;
+
+  display: grid;
+  grid-template-areas:
+    "img img h2 h2"
+    "img img rating rating"
+    "img img descr descr"
+    "img img drama action"
+    "img img delete delete";
+}
+.card > img {
+  grid-area: img;
+  margin-right: 10px;
+  width: 100px;
+}
+.card > h2 {
+  grid-area: h2;
+}
+.card > small {
+  grid-area: rating;
+  font-size: 0.8rem;
+}
+.card > p {
+  grid-area: descr;
+}
+.btnDrama {
+  grid-area: drama;
+}
+.btnAction {
+  grid-area: action;
+}
+.btnDelete {
+  grid-area: delete;
+}
+/* Main Section */
+.mainSection {
+  /* margin-top: 20px; */
+  min-height: 70vh;
+  background: rgb(33, 33, 35);
+  color: white;
+
+  width: 70%;
+  margin: auto;
+}
+.mainBtns {
+  padding: 10px;
+  gap: 10px;
+}
+.mainCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+  padding: 30px;
+}
