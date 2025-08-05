@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Main = () => {
   return (
-    <main className="mainSection">
+    <main className="contentSection">
       <div className="mainBtns">
         <button className="mainBtnAll">All</button>
         <button className="mainBtnDrama">Drama</button>
